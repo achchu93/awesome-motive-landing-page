@@ -1,0 +1,31 @@
+h1,
+h2,
+h4 {
+	color: $color-primary-text;
+	line-height: $line-height-xs;
+	margin-top: 0;
+}
+
+h1 {
+	font-size: $font-size-xl * .75;
+	margin-bottom: $spacing-md;
+
+	@include media(tablet-portrait) {
+		margin-bottom: $spacing-lg;
+		font-size: $font-size-xl;
+	}
+}
+
+h2 {
+	font-size: $font-size-lg * 1.33;
+	margin-bottom: $spacing-sm;
+}
+
+h4 {
+	font-size: $font-size-md;
+	margin-bottom: $spacing-sm;
+
+	@include media(tablet-portrait) {
+		font-size: $font-size-lg;
+	}
+}

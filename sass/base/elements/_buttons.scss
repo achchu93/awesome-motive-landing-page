@@ -1,0 +1,30 @@
+.button {
+	font-size: $font-size-sm;
+	width: 200px;
+	padding: .75rem;
+	box-sizing: border-box;
+	text-align: center;
+	display: inline-block;
+	border: 1px solid $color-border;
+	border-radius: 3px;
+
+	@include media(tablet-portrait) {
+		width: 290px;
+		padding: 1rem;
+		font-size: $font-size-md;
+	}
+
+	&--secondary {
+		background-color: $color-main;
+	}
+
+	&--primary {
+		color: $color-white;
+		background-color: $color-accent;
+		border: 1px solid rgba(0,0,0,.2);
+	}
+
+	&--inverted {
+		background-color: $color-white;
+	}
+}

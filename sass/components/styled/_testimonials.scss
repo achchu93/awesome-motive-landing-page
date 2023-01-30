@@ -1,0 +1,35 @@
+.testimonial-cards {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: $spacing-md;
+	align-items: start;
+
+	@include media(tablet-landscape) {
+		grid-template-columns: repeat(3, 1fr);
+		gap: $spacing-xl;
+	}
+
+	&__item {
+		background-color: $color-white;
+		border: 1px solid $color-border;
+		padding: $spacing-md;
+		border-radius: 6px;
+
+		&-content {
+			margin: 0 0 $spacing-xs;
+			font-size: $font-size-xs;
+			font-weight: 400;
+			line-height: $line-height-md;
+		}
+
+		&-footer {
+			display: flex;
+			justify-content: space-between;
+
+			&--author {
+				font-size: .875rem;
+				color: #AAAAAA;
+			}
+		}
+	}
+}

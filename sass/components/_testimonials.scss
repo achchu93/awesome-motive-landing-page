@@ -1,0 +1,19 @@
+.testimonials {
+	background-color: $color-main;
+	background: linear-gradient(180deg, $color-main 0%, $color-white 100%);
+
+	&__actions {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: $spacing-xs;
+		margin-top: $spacing-md;
+		
+		@include media(tablet-portrait) {
+			margin-top: $spacing-xxl;
+			gap: $spacing-xl;
+			flex-direction: row;
+		}
+	}
+}

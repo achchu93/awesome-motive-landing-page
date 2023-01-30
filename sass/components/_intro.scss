@@ -1,0 +1,51 @@
+.intro {
+	display: flex;
+	justify-content: center;
+	background-color: $color-main;
+
+	@include media(tablet-landscape) {
+		padding-top: 50px;
+		padding-bottom: 320px;
+	}
+
+	&__title {
+		text-align: center;
+	}
+
+	&__badge {
+		font-size: 10px;
+		background: #BBBBBB;
+		padding: 5px 10px;
+		border-radius: 11px;
+		text-transform: uppercase;
+		vertical-align: super;
+		color: #fff;
+		position: relative;
+		top: -18px;
+
+	}
+
+	&__description {
+		font-size: $font-size-xs;
+		text-align: center;
+		margin: 0 0 $spacing-lg;
+		line-height: $line-height-sm;
+
+		@include media(tablet-portrait) {
+			font-size: $font-size-sm;
+		}
+	}
+
+	&__actions {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		gap: 10px;
+		align-items: center;
+
+		@include media(tablet-portrait) {
+			flex-direction: row;
+			gap: 50px;
+		}
+	}
+}
